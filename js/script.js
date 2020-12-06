@@ -11,7 +11,8 @@ let modalClose = document.querySelectorAll('.modal_close');
 let call = document.querySelector('.header_call');
 let order = document.querySelector('.header_order');
 let input = document.querySelectorAll('input');
-
+let btnTop = document.querySelector('.btn_top');
+let start = document.getElementById('start');
 
 form.addEventListener('submit', function(event) {
 	event.preventDefault();			// Отмена перезагрузки страницы
@@ -29,8 +30,7 @@ form.addEventListener('submit', function(event) {
     });
     let json = JSON.stringify(obj);
     request.send(json);
-    console.log(json);
- 
+  
     request.addEventListener('readystatechange', function() {
         if (request.readyState === 4 && request.status == 200) {
             console.log("OK");
@@ -64,4 +64,27 @@ modalClose.forEach(function(item) {
         thanksForm.style.display = 'none';
         overlay.style.display = 'none';
     }) ;
-})
+});
+
+window,addEventListener('scroll', function() {
+    if (window.scrollY > 1200) {
+        btnTop.style.display = 'flex';
+    }
+    else {
+        btnTop.style.display = 'none';
+    }
+});
+
+let timeOut;
+function goUp() {
+   let top = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+   if(top > 0) {
+      window.scrollBy(0,-400);
+      timeOut = setTimeout('goUp()', 20);
+   } else clearTimeout(timeOut);
+}
+
+btnTop.addEventListener('click', function() {
+    goUp();
+});
+

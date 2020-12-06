@@ -63,7 +63,7 @@
 				</div>
 			</div>
 		</header>
-		<section class="promo" id="start">
+		<section class="promo">
 			<div class="container">
 				<div class="promo_header">
 					<h1 class="promo_h1">Аутсорсинг охраны труда</h1>
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="adv">
+		<section class="adv" id="start">
 			<h3>Наши преимущества:</h3>
 			<div class="container">
 				<div class="adv_item">
@@ -130,15 +130,15 @@
 		</section>
 		<section class="callback_form">
 			<div class="container">
-				<h3>Заполните заявку, и мы свяжемся с Вами</h3>
+				<h3>Получить бесплатную консультацию:</h3>
 				<form action="post" class="main_form">
 					<input type="text" required name="name" placeholder="Ваше имя *">
 					<input type="tel" required name="phone" placeholder="Ваш номер телефона *">
 					<input type="email" required name="email" placeholder="Ваш e-mail *">
 					<div class="callback_form_descr">* - поля, обязательные для заполнения</div>
-					<input type="checkbox" id="conditions" checked>
-					<label for="conditions">Я согласен на обработку моих персональных данных</label>
 					<button type="submit" id="callback_btn_send">Отправить</button>
+					
+					<div class="callback_form_descr">Нажимая, я соглашаюсь на обработку моих персональных данных</div>
 				</form>
 			</div>
 		</section>
@@ -213,7 +213,7 @@
 			&copy;&nbsp;ИП Байбородова И.Н. 2020
 		</footer>
 	</div>
-	<div class="btn_top"><a href="#start"><img src="/icons/top.png" alt="Вверх"></a></div>
+	<div class="btn_top"><img src="/icons/up.svg" alt="Вверх"></div>
 
 
 	<div class="overlay" id="overlay">
@@ -222,12 +222,13 @@
 			<h3>Обратный звонок</h3>
 			<div class="modal_descr">
 				Пожалуйста, заполните данные и мы перезвоним Вам
-				<div action="post">
+				<form action="post">
 					<input type="text" required name="name" placeholder="Ваше имя *">
-					<input type="number" required name="phone" placeholder="Ваш номер телефона *">
+					<input type="tel" required name="phone" placeholder="Ваш номер телефона *">
 					<input type="email" required name="email" placeholder="Ваш e-mail *">
 					* - поля, обязательные для заполнения
 					<div class="modal_btn"><button type="submit" id="call_btn_send">Отправить</button></div>
+					<div class="callback_form_descr">Нажимая, я соглашаюсь на обработку моих персональных данных</div>
 				</form>
 			</div>
 		</div>
@@ -239,11 +240,12 @@
 				Пожалуйста, заполните данные и мы свяжемся с Вами
 				<form action="post">
 					<input type="text" required name="name" placeholder="Ваше имя *">
-					<input type="number" name="phone" placeholder="Ваш номер телефона">
+					<input type="tel" name="phone" placeholder="Ваш номер телефона">
 					<input type="email" required name="email" placeholder="Ваш e-mail *">
 					<textarea required name="comment" placeholder="Какая услуга Вас интересует? *"></textarea>
 					* - поля, обязательные для заполнения
 					<div class="modal_btn"><button type="submit" id="order_btn_send">Отправить</button></div>
+					<div class="callback_form_descr">Нажимая, я соглашаюсь на обработку моих персональных данных</div>
 				</form>
 			</div>
 		</div>
