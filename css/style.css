@@ -76,7 +76,7 @@ header .container {
 }
 
 .menu ul li {
-	margin-top: 4px;
+	margin-top: 2px;
 }
 
 .menu ul li .li_item {
@@ -408,7 +408,6 @@ section {
 	width: 50%;
 	line-height: 1.5em;
 	margin-right: 60px;
-
 }
 
 .training a {
@@ -482,7 +481,6 @@ section {
 	flex-wrap: wrap;
 }
 
-
 .risk_management .list_item {
 	display: flex;
 	justify-content: left;
@@ -492,7 +490,6 @@ section {
 	padding: 0 60px;
 }
 
-
 .risk_management .list_item img {
 	margin-right: 40px;
 }
@@ -500,6 +497,74 @@ section {
 .risk_management .container_inf {
 	line-height: 1.5em;
 }
+
+.law {
+	position: relative;
+	min-height: 500px;
+}
+
+.law .container,
+.container_inf {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 30px
+}
+
+.law .container_inf {
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.law .container_inf img {
+	padding-right: 60px;
+}
+
+.law_list_citizen .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.law_list_citizen .container .list_item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48%;
+	padding: 10px;
+}
+
+.law_list_citizen .container .list_item img {
+	margin: 15px;
+	max-height: 60px;
+}
+
+.law_list_citizen .container .list_item h4 {
+	margin: 20px auto;
+}
+
+.law_list_corp .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 60px;
+	padding-bottom: 30px
+}
+
+.law_list_corp .descr {
+	width: 50%;
+	line-height: 1.5em;
+	margin-left: 60px;
+	margin-right: 30px;
+}
+
+.law_list_corp .container img {
+	padding-right: 30px;
+	max-width: 350px;
+}
+
+
 
 .map {
 	position: relative;
